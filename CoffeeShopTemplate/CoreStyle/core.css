@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Dana Bold"; /*600*/
+        src: local("DanaBold"), 
+        url("../Assets/Fonts/Dana/woff2/DanaFaNum-DemiBold.woff2") format("woff2");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Dana Medium"; /*500*/
+        src: local("DanaMedium"), 
+        url("../Assets/Fonts/Dana/woff2/DanaFaNum-Medium.woff2") format("woff2");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Dana Regular"; /*400*/
+        src: local("DanaRegular"), 
+        url("../Assets/Fonts/Dana/woff2/DanaFaNum-Regular.woff2") format("woff2");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "squar Bold"; /*700*/
+        src: local("squarBold"), 
+        url("../Assets/Fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "squar Medium"; /*500*/
+        src: local("squarMedium"), 
+        url("../Assets/Fonts/Morabba/woff2/Morabba-Medium.woff2") format("woff2");
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "squar Light"; /*300*/
+        src: local("squarLight"), 
+        url("../Assets/Fonts/Morabba/woff2/Morabba-Light.woff2") format("woff2");
+        font-display: swap;
+    }
+    body {
+        @apply font-DanaRegu;
+    }
+}
