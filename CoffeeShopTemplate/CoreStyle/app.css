@@ -624,11 +624,15 @@ body {
   --tw-contain-style:  ;
 }
 
-.font-squarBld {
-  font-family: squar Bold;
+.size-6 {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.h-8 {
+  height: 2rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
