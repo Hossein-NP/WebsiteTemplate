@@ -624,6 +624,26 @@ body {
   --tw-contain-style:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.hidden {
+  display: none;
+}
+
 .size-6 {
   width: 1.5rem;
   height: 1.5rem;
@@ -635,4 +655,8 @@ body {
 
 .w-8 {
   width: 2rem;
+}
+
+.border {
+  border-width: 1px;
 }
