@@ -25,6 +25,9 @@ module.exports = {
         "squarBld" : "squar Bold",
         "squarMd" : "squar Medium",
         "squarRegu" : "squar Light",
+      },
+      letterSpacing : {
+        "tightest" : "-0.065em",
       }
     },
   },
