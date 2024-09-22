@@ -13,7 +13,7 @@ module.exports = {
         }
       },
       boxShadow : {
-        "shadow-normal" : "0px 1px 10px 0px #0000000D",
+        "normal" : "0px 1px 10px 0px #0000000D",
       },
       borderRadius : {
         "4xl" : "2rem",
