@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,10 +37,11 @@
                 <li>
                     <a href="#" class="font-medium font-DanaMd text-orange-200">صفحه اصلی</a>
                 </li>
-                <li class="relative">
-                    <a href="#">فروشگاه</a>
+                <li class="relative group">
+                    <a href="#" class="group-hover:text-orange-300 group-hover:transition-colors">فروشگاه</a>
                     <div class="absolute w-52 h-[272px] bg-white dark:bg-zinc-700 text-zinc-700
-                     dark:text-white text-base tracking-normal shadow-normal p-6 top-14 space-y-4 rounded-2xl border-t-[3px] border-orange-300 tracking-normal child:block child:transition-colors child-hover:text-orange-300">                    
+                     dark:text-white text-base tracking-normal shadow-normal p-6 top-full space-y-4 rounded-2xl border-t-[3px]
+                      border-orange-300 tracking-normal child:inline-block transition-all child:transition-colors child-hover:text-orange-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible">                    
                             <a href="">قهوه ویژه</a>                                            
                             <a href="">ویژه در سطح جهانی</a>                                            
                             <a href="">قهوه درجه یک</a>                                            
@@ -69,13 +70,13 @@
                 <!-- Cart icon -->
                 <div>
                     <svg class="w-8 h-8">
-                        <use xlink:href="#cart"></use>
+                        <use href="#cart"></use>
                     </svg>
                 </div>
                 <!-- Theme switch -->
                 <div>
                     <svg class="w-8 h-8">
-                        <use xlink:href="#moon"></use>
+                        <use href="#moon"></use>
                     </svg>
                 </div>
             </div>
@@ -84,7 +85,7 @@
             <!-- Login section -->
              <a href="" class="flex items-center gap-x-3 tracking-tightest">
                 <svg class="w-8 h-8">
-                    <use xlink:href="#login"></use>
+                    <use href="#login"></use>
                 </svg>
                 <span>
                     ورود | ثبت نام
