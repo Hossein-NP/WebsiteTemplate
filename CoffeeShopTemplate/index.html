@@ -87,9 +87,12 @@
                 </div>
                 <!-- Theme switch -->
                 <div>
-                    <div class="py-3">
-                        <svg class="w-8 h-8">
+                    <div class="cursor-pointer" id="toggle-theme">
+                        <svg class="w-8 h-8 inline-block dark:hidden">
                             <use href="#moon"></use>
+                        </svg>
+                        <svg class="w-8 h-8 hidden dark:inline-block">
+                            <use href="#sun"></use>
                         </svg>
                     </div>
                 </div>
