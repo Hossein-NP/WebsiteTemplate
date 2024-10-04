@@ -6,6 +6,13 @@
     <title>Coffee Shop</title>
     <link rel="shortcut icon" href="./Assets/Images/24_Header-Analyze/fav-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./CoreStyle/app.css">
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+        } else {
+        document.documentElement.classList.remove('dark')
+        }
+    </script>
 </head>
 <body class="bg-gray-100 dark:bg-zinc-800">
     <svg class="hidden">
@@ -37,7 +44,7 @@
                 <li>
                     <a href="#" class="font-medium font-DanaMd text-orange-200">صفحه اصلی</a>
                 </li>
-                <li class="relative group">
+                  <li class="relative group">
                     <a href="#" class="group-hover:text-orange-300 group-hover:transition-colors">فروشگاه</a>
                     <div class="absolute w-52 h-[272px] bg-white dark:bg-zinc-700 text-zinc-700
                      dark:text-white text-base tracking-normal shadow-normal p-6 top-full space-y-4 rounded-2xl border-t-[3px]
@@ -69,15 +76,22 @@
             <div class="flex items-center gap-x-5">
                 <!-- Cart icon -->
                 <div>
-                    <svg class="w-8 h-8">
-                        <use href="#cart"></use>
-                    </svg>
+                    <!-- Cart Icon Hover -->
+                    <div class="py-3">
+                        <svg class="w-8 h-8">
+                            <use href="#cart"></use>
+                        </svg>
+                    </div>
+                    <!-- Cart box -->
+                     <div></div>
                 </div>
                 <!-- Theme switch -->
                 <div>
-                    <svg class="w-8 h-8">
-                        <use href="#moon"></use>
-                    </svg>
+                    <div class="py-3">
+                        <svg class="w-8 h-8">
+                            <use href="#moon"></use>
+                        </svg>
+                    </div>
                 </div>
             </div>
             <!-- Divider -->
