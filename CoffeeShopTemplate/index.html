@@ -28,6 +28,9 @@
         <symbol id="login" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
         </symbol> 
+        <symbol id="arrow-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </symbol>          
      </svg>
 
     <!-- 1 >> Header menu section -->
@@ -75,15 +78,26 @@
         <div class="flex text-orange-200 text-xl gap-x-10 ">
             <div class="flex items-center gap-x-5">
                 <!-- Cart icon -->
-                <div>
+                <div class="relative group">
                     <!-- Cart Icon Hover -->
-                    <div class="py-3">
+                    <div class="py-3 cursor-pointer">
                         <svg class="w-8 h-8">
                             <use href="#cart"></use>
                         </svg>
                     </div>
                     <!-- Cart box -->
-                     <div></div>
+                     <div class="absolute left-0 w-[400px] h-[272px] bg-white dark:bg-zinc-700 text-zinc-700
+                     dark:text-white text-base tracking-normal shadow-normal p-6 top-full space-y-4 rounded-2xl border-t-[3px]
+                      border-orange-300 tracking-normal">
+                      <div class="flex justify-between">
+                        <span>1 مورد</span>
+                        <a href="" class="flex ">
+                            <svg class="w-5 h-5">
+                                <use href="#arrow-left"></use>
+                            </svg>مشاهده سبد خرید 
+                        </a>
+                      </div>
+                    </div>
                 </div>
                 <!-- Theme switch -->
                 <div>
