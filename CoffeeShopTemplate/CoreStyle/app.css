@@ -695,8 +695,8 @@ body {
   height: 6rem;
 }
 
-.h-5 {
-  height: 1.25rem;
+.h-4 {
+  height: 1rem;
 }
 
 .h-8 {
@@ -711,12 +711,8 @@ body {
   height: 100%;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
-.w-5 {
-  width: 1.25rem;
+.w-4 {
+  width: 1rem;
 }
 
 .w-52 {
@@ -741,10 +737,6 @@ body {
 
 .w-px {
   width: 1px;
-}
-
-.w-4 {
-  width: 1rem;
 }
 
 .cursor-pointer {
@@ -870,12 +862,12 @@ body {
   letter-spacing: 0em;
 }
 
-.tracking-tightest {
-  letter-spacing: -0.065em;
-}
-
 .tracking-tighter {
   letter-spacing: -0.05em;
+}
+
+.tracking-tightest {
+  letter-spacing: -0.065em;
 }
 
 .text-gray-300 {
@@ -922,6 +914,10 @@ body {
 
 .group:hover .group-hover\:visible {
   visibility: visible;
+}
+
+.group:hover .group-hover\:font-medium {
+  font-weight: 500;
 }
 
 .group:hover .group-hover\:text-orange-300 {
