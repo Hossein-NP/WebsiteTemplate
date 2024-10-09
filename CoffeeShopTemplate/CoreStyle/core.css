@@ -41,6 +41,7 @@
     }
     body {
         @apply font-DanaRegu;
-        background-image: url(../Assets/Images/headerBgDesktop.png);
+        background-image: url(../Assets/Images/headerBgDesktop.webp);
+        background-repeat: no-repeat;
     }
 }
