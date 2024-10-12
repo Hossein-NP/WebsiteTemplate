@@ -34,7 +34,7 @@
      </svg>
 
     <!-- 1 >> Header menu section -->
-     <header class="fixed top-9 left-0 right-0 bg-black/50 backdrop-blur-[6px] flex items-center w-[90%] mx-auto px-10 py-5 h-24 rounded-3xl">
+     <header class="fixed top-9 left-0 right-0 bg-black/50 backdrop-blur-[6px] hidden lg:flex items-center w-[90%] mx-auto px-10 py-5 h-24 rounded-3xl">
        <div class="flex w-full  justify-between items-center">
          <!-- Logo and nav links (right section) -->
          <nav class="flex items-center gap-x-9 h-14">
@@ -75,8 +75,8 @@
             </ul>
         </nav>
         <!-- Login icons & Theme switch & Cart icon (left section) -->
-        <div class="flex text-orange-200 text-xl gap-x-10 ">
-            <div class="flex items-center gap-x-5">
+        <div class="flex text-orange-200 text-xl gap-x-5 xl:gap-x-10 ">
+            <div class="flex items-center gap-x-5 xl:gap-x-10">
                 <!-- Cart icon -->
                 <div class="relative group">
                     <!-- Cart Icon Hover -->
@@ -162,7 +162,7 @@
                 <svg class="w-8 h-8">
                     <use href="#login"></use>
                 </svg>
-                <span>
+                <span class="hidden xl:inline-block">
                     ورود | ثبت نام
                 </span>
              </a>
