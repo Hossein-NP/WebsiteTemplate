@@ -516,6 +516,7 @@ body {
   font-family: Dana Regular;
   background-image: url(../Assets/Images/headerBgDesktop.webp);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 *, ::before, ::after {
@@ -727,6 +728,22 @@ body {
   height: 100%;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-\[40px\] {
+  height: 40px;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
 .w-30 {
   width: 7.5rem;
 }
@@ -761,6 +778,18 @@ body {
 
 .w-px {
   width: 1px;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .shrink-0 {
@@ -899,6 +928,11 @@ body {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .text-center {
@@ -1132,6 +1166,10 @@ body {
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:flex-shrink-0 {
