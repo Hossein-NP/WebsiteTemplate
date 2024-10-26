@@ -46,3 +46,28 @@
         background-size: cover;
     }
 }
+
+@layer components{
+    .submenu {
+        @apply flex flex-col child:pr-7 gap-y-3 mt-3 text-sm text-zinc-600 dark:text-white;
+    }
+    .submenu__item--active {
+        /* position: relative;
+        padding-right: 10px;
+        color: #FDBA74; */
+        @apply relative pr-10 text-orange-300;
+    }
+    .submenu__item--active::after {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 100px;
+        background-color: #FDBA74;
+        top: 0;
+        right: 30px;
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+    }
+}
