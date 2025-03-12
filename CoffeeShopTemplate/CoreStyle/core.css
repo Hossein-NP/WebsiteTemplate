@@ -49,10 +49,10 @@
 
 @layer components{
     .submenu {
-        @apply hidden flex flex-col child:pr-7 gap-y-3 mt-3 text-sm text-zinc-600 dark:text-white;
+        @apply hidden  flex-col child:pr-7 gap-y-3 mt-3 text-sm text-zinc-600 dark:text-white;
     }
     .submenu--open {
-        @apply 
+        @apply  flex ;
     }
     .submenu__item--active {
         /* position: relative;

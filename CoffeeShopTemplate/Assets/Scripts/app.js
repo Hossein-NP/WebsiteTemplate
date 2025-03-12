@@ -1,5 +1,5 @@
 const toggleThemeBtn = document.querySelectorAll(".toggle-theme");
-const submenuOpenBtn = Document . querySelector(".submenu-open-btn");
+const submenuOpenBtn = document.querySelector(".submenu-open-btn");
 const submenu  = document.querySelector(".submenu")
 
 toggleThemeBtn.forEach( btn =>{
@@ -14,6 +14,7 @@ toggleThemeBtn.forEach( btn =>{
     })
 })
 
-submenuOpenBtn.addEventListener("click" , ()=>{
-    submenu.classList.toggle("submenu--open")
+submenuOpenBtn.addEventListener("click" , (e)=>{
+    e.currentTarget.parentElement.classList.toggle("text-orange-300");
+    submenu.classList.toggle("submenu--open"); 
 })
