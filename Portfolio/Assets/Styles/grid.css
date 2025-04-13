@@ -1,0 +1,83 @@
+/* Root */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: rgb(206, 219, 226);
+}
+
+/* Test Content */
+.content {
+    background-color: yellow;
+    color: rgb(39, 39, 39);
+    height: 10rem;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Media Query */
+/* SM */
+@media all and (width >= 576px) {
+    .container {
+          max-width: 54rem;
+    }
+}
+
+/* MD */
+@media all and (width >= 768px) {
+  .container {
+        max-width: 72rem;
+  }
+}
+
+/* LG */
+@media all and (width >= 992px) {
+  .container {
+        max-width: 96rem;
+  }
+}
+
+/* XL */
+@media all and (width >= 1200px) {
+  .container {
+        max-width: 114rem;
+  }
+}
+
+/* 2XL */
+@media all and (width >= 1400px) {
+  .container {
+        max-width: 132rem;
+  }
+}
