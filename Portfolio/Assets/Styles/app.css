@@ -7,6 +7,25 @@
   --app-bg-color: #fff; /* WHITE */
   --shadow-color: rgba(19, 182, 255, 0.24); /* SKY BLUE  */
   --text-color: #333; /* Dark Gray */
+  --primary-color: #0ABEAD /* PRIMARY COLOR*/
+}
+
+/*
+
+  RESET STYLES
+  ==========================================================================
+
+*/
+
+a{
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 /*
@@ -24,4 +43,42 @@ body {
   font-family: "Poppins-Regular", sans-serif;
   font-size: 1.6rem; /* 16px */
   line-height: 1.6;
+}
+
+.header {
+  box-shadow: 0 -12px 40px 5px var(--shadow-color);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+.nav__logo {
+  color: var(--primary-color);
+  font-family: "Poppins-Black";
+  font-size: 4rem;
+}
+.menu {
+  display: flex;
+}
+.menu__items {
+  margin-left: 4rem;
+}
+.menu__items:first-child {
+  margin-left: 0;
+}
+.menu__links {
+  color: var(--text-color);
+  font-family: "Poppins-Medium";
+
+}
+.menu__links-active {
+  color: var(--primary-color);
+}
+.nav__toggle-icon {
+  display: none;
+}
+.nav__toggle-line {
+
 }
