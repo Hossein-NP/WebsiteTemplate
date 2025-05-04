@@ -5,7 +5,6 @@
 :root {
   --section-bg-color: #fff; /* WHITE */
   --app-bg-color: #fff; /* WHITE */
-  --shadow-color: rgba(19, 182, 255, 0.24); /* SKY BLUE  */
   --text-color: #333; /* Dark Gray */
   --primary-color: #0ABEAD /* PRIMARY COLOR*/
 }
@@ -46,7 +45,8 @@ body {
 }
 
 .header {
-  box-shadow: 0 -12px 40px 5px var(--shadow-color);
+  background-color: var(--section-bg-color);
+  box-shadow: 0 .5rem 4rem  rgba(4, 195, 255, 16%);
 }
 nav {
   display: flex;
@@ -61,6 +61,7 @@ nav {
 }
 .menu {
   display: flex;
+  
 }
 .menu__items {
   margin-left: 4rem;
