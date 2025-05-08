@@ -82,6 +82,13 @@ nav {
   cursor: pointer;
 }
 .nav__toggle-line {
+  position: relative;
+}
+
+.nav__toggle-line,
+.nav__toggle-line::after,
+.nav__toggle-line::before {
+  content: "";
   width: 3.5rem;
   height: 0.3rem;
   background-color: var(--primary-color);
@@ -90,23 +97,14 @@ nav {
   -moz-border-radius: 2rem;
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
-  position: relative;
-}
-
-.nav__toggle-line::after,
-.nav__toggle-line::before {
-  content: "";
-  width: 3.5rem;
-  height: 0.3rem;
-  background-color: var(--primary-color);
-  position: absolute;
-  border-radius: 2rem;
 }
 
 .nav__toggle-line::after {
   top: -0.6rem;
+  position: absolute;
 }
 
 .nav__toggle-line::before {
   top: 0.6rem;
+  position: absolute;
 }
