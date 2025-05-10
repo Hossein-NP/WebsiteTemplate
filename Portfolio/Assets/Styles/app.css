@@ -79,7 +79,14 @@ nav {
 }
 .nav__toggle-icon {
   display: none;
+  width: 4rem;
+  height: 4rem;
   cursor: pointer;
+  transition: all 150ms ease-in-out;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
 }
 .nav__toggle-line {
   position: relative;
@@ -89,7 +96,7 @@ nav {
 .nav__toggle-line::after,
 .nav__toggle-line::before {
   content: "";
-  width: 3.5rem;
+  width: 4rem;
   height: 0.3rem;
   background-color: var(--primary-color);
   border-radius: 2rem;
@@ -100,11 +107,33 @@ nav {
 }
 
 .nav__toggle-line::after {
-  top: -0.6rem;
+  top: -1rem;
   position: absolute;
+  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
 }
 
 .nav__toggle-line::before {
-  top: 0.6rem;
+  bottom: -1rem;
   position: absolute;
+  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
 }
+
+.nav__toggle-icon--open .nav__toggle-line {
+  background-color: transparent;
+}
+.nav__toggle-icon--open .nav__toggle-line::after {
+    transform: translateY(1rem) rotate(45deg);
+}
+.nav__toggle-icon--open .nav__toggle-line::before {
+  transform: translateY(-1rem) rotate(-45deg);
+}
+
+
