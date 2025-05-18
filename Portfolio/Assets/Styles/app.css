@@ -37,12 +37,13 @@ ul {
 html {
   font-size: 62.5%;
 }
-
 body {
   font-family: "Poppins-Regular", sans-serif;
   font-size: 1.6rem; /* 16px */
   line-height: 1.6;
 }
+
+/* HEADER SECTION STYLE  */
 
 .header {
   background-color: var(--section-bg-color);
@@ -116,7 +117,6 @@ nav {
 .nav__toggle-line {
   position: relative;
 }
-
 .nav__toggle-line,
 .nav__toggle-line::after,
 .nav__toggle-line::before {
@@ -130,7 +130,6 @@ nav {
   -ms-border-radius: 2rem;
   -o-border-radius: 2rem;
 }
-
 .nav__toggle-line::after {
   top: -1rem;
   position: absolute;
@@ -140,7 +139,6 @@ nav {
   -ms-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
 }
-
 .nav__toggle-line::before {
   bottom: -1rem;
   position: absolute;
@@ -150,7 +148,6 @@ nav {
   -ms-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
 }
-
 .nav__toggle-icon--open .nav__toggle-line {
   background-color: transparent;
 }
@@ -161,5 +158,20 @@ nav {
   transform: translateY(-1rem) rotate(-45deg);
 }
 
+/* MAIN >> HOME SECTION  */
 
-
+.home__content {
+  
+}
+.home__name {
+  
+}
+.home__title {
+  
+}
+.home__caption {
+  
+}
+.home__links__wrapper {
+  
+}
