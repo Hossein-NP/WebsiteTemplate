@@ -53,6 +53,24 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 3rem 0;
+  position: relative;
+  z-index: 1000;
+}
+.cover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #c4d8d677;
+  z-index: 999;
+  opacity: 0;
+}
+.cover__open {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+  -webkit-transition: opacity 250ms ease-in-out;
+  -moz-transition: opacity 250ms ease-in-out;
+  -ms-transition: opacity 250ms ease-in-out;
+  -o-transition: opacity 250ms ease-in-out;
 }
 .nav__logo {
   color: var(--primary-color);
@@ -72,6 +90,14 @@ nav {
   color: var(--text-color);
   font-family: "Poppins-Medium";
 
+}
+.menu__links:hover {
+  color: var(--primary-color);
+  transition: color 200ms ease-in-out;
+  -webkit-transition: color 200ms ease-in-out;
+  -moz-transition: color 200ms ease-in-out;
+  -ms-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
 }
 .menu__links-active {
   color: var(--primary-color);
@@ -134,5 +160,6 @@ nav {
 .nav__toggle-icon--open .nav__toggle-line::before {
   transform: translateY(-1rem) rotate(-45deg);
 }
+
 
 
